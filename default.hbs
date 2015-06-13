@@ -26,8 +26,8 @@
     <header id="site-head">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
         <h1 class="blog-title"><a href="{{@blog.url}}">REC<span>odes</span></a></h1>
-        {{> header-description}}
-        {{!> menu}}
+        {{!> header-description}}
+        {{navigation}}
     </header>
 
     {{{body}}}
@@ -43,7 +43,7 @@
 
     {{ghost_foot}}
 
-    <script type="text/javascript" src="{{asset "js/prism.min.js"}}" async></script>
+    <script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
