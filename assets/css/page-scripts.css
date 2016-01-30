@@ -1,0 +1,28 @@
+body {
+  background: #F1F1F1;
+  color: #7D7D7D;
+}
+
+.blog-title a {
+  text-shadow: 2px 2px 0 white;
+}
+
+#blog-logo {display: none;}
+
+.post-content {
+  position: relative;
+}
+
+.post-content h2 a {
+  color: #F87E80;
+}
+
+.post-title {
+  color: #F9F9B8;
+  font-family: monospace;
+  font-size: 4em;
+  margin: 0;
+  padding: 30px 30px 4px 30px;
+  text-align: center;
+  text-shadow: 5px 5px 0 #F87E80;
+}
