@@ -605,6 +605,30 @@ table {
     }
 }
 
+.kudos {
+    bottom: 60px;
+    position: fixed;
+    right: 60px;
+    opacity: 0;
+    transform: scale(0);
+
+    -webkit-animation-name: logoIntro;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+       -moz-animation-name: logoIntro;
+       -moz-animation-duration: 2s;
+       -moz-animation-delay: 4s;
+       -moz-animation-iteration-count: 1;
+       -moz-animation-fill-mode: forwards;
+            animation-name: logoIntro;
+            animation-duration: 2s;
+            animation-delay: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+}
+
 /* === Media Queries === */
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
@@ -630,5 +654,12 @@ table {
 
     .page-number {
         display: block
+    }
+
+
+    .kudos {
+        bottom: 0;
+        position: static;
+        right: 0;
     }
 }

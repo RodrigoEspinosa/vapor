@@ -1,4 +1,7 @@
 {
   "name": "vapor",
-  "version": "1.4"
+  "version": "1.4",
+  "scripts": {
+    "compile": "lessc assets/css/screen.less assets/css/screen.css"
+  }
 }

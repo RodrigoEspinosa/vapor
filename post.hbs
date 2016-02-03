@@ -7,9 +7,11 @@
         {{#post}}
 
         <header>
-        {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
-        <h1 class="post-title">{{{title}}}</h1>
-        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
+            {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
+            <h1 class="post-title">{{{title}}}</h1>
+            <div class="post-meta">
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
+            </div>
         </header>
 
         <section class="post-content">
@@ -18,7 +20,7 @@
 
         <section class="share">
             <p class="info prompt">Share this post</p>
-            <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+            <a href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span>
             </a>
@@ -52,5 +54,7 @@
         {{!> comments-google-plus}}
 
     </article>
+
+    <div class="kudos" data-amount="0" data-url="{{url absolute="true"}}"></div>
 
 </main>
